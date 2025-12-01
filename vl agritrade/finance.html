@@ -1,0 +1,57 @@
+<!-- finance.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VL AgriTrade — Hỗ trợ tài chính</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo-wrap"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="#fff"/></svg></div><div><div class="brand-title">VL AgriTrade</div></div></div>
+      <nav class="nav-links"><a href="index.html">Trang chủ</a><a href="priceboard.html">AgriLive</a><a href="marketplace.html">Mua/Bán</a><a href="finance.html">Hỗ trợ tài chính</a><a href="agritrace.html">AgriTrace</a></nav>
+      <div class="actions"><a class="btn secondary" href="register.html">Đăng ký</a><a class="btn" href="login.html">Đăng nhập</a></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Hỗ trợ tài chính — Tạm ứng mùa vụ (demo)</h2>
+    <div class="card" style="display:grid;grid-template-columns:1fr 360px;gap:18px">
+      <div>
+        <p style="color:var(--muted)">Bạn có thể gửi yêu cầu tạm ứng dựa trên giá trị lô. Phiên bản này mô phỏng form gửi lên đối tác tài chính.</p>
+        <form onsubmit="event.preventDefault(); alert('Yêu cầu đã gửi (demo)');">
+          <label>Tên nông dân / HTX</label><input required placeholder="Ví dụ: HTX Quới An">
+          <label style="margin-top:8px">Trace / ID lô</label><input required placeholder="AGT-XXX-001">
+          <div class="form-row" style="margin-top:8px">
+            <div class="col"><label>Tổng giá trị lô (₫)</label><input required placeholder="1,200,000"></div>
+            <div class="col"><label>Số tiền tạm ứng yêu cầu (₫)</label><input required placeholder="360,000"></div>
+          </div>
+          <label style="margin-top:8px">Ghi chú</label><textarea rows="4" placeholder="Ghi chú..."></textarea>
+          <div style="margin-top:10px"><button class="btn">Gửi yêu cầu (demo)</button></div>
+        </form>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin-top:0">Tiêu chí phê duyệt (ví dụ)</h4>
+          <ul style="color:var(--muted);margin:6px 0 0 18px">
+            <li>Lịch sử giao dịch</li>
+            <li>Giá trị lô & QR truy xuất</li>
+            <li>Xác minh danh tính nông dân</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin-top:0">Liên kết ngân hàng (demo)</h4>
+          <p style="color:var(--muted);margin:0">Kết nối API ngân hàng để tự động phê duyệt & giải ngân.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer><div class="container">© VL AgriTrade</div></footer>
+</body>
+</html>

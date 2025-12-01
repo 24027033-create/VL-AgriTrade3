@@ -1,0 +1,75 @@
+<!-- agritrace.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VL AgriTrade — AgriTrace</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo-wrap"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="#fff"/></svg></div><div><div class="brand-title">VL AgriTrade</div></div></div>
+      <nav class="nav-links"><a href="index.html">Trang chủ</a><a href="priceboard.html">AgriLive</a><a href="marketplace.html">Mua/Bán</a><a href="finance.html">Hỗ trợ tài chính</a><a href="agritrace.html">AgriTrace</a></nav>
+      <div class="actions"><a class="btn secondary" href="register.html">Đăng ký</a><a class="btn" href="login.html">Đăng nhập</a></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">AgriTrace — Truy xuất nguồn gốc bằng QR (mẫu)</h2>
+    <div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+      <div>
+        <p style="color:var(--muted)">Quét QR để xem lịch sử canh tác, vật tư sử dụng và giao dịch.</p>
+        <label>Nhập mã Trace (ví dụ: AGT-001)</label>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <input id="traceInput" placeholder="AGT-001">
+          <button class="btn" onclick="showTrace()">Tìm</button>
+        </div>
+
+        <div id="traceResult" style="margin-top:12px"></div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin-top:0">Ví dụ QR</h4>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:96px;height:96px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)" id="qrSample">
+              <!-- svg qr -->
+              <svg width="76" height="76" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                <rect width="90" height="90" fill="#fff"/>
+                <rect x="6" y="6" width="24" height="24" fill="#2E7D32"/>
+                <rect x="60" y="6" width="24" height="24" fill="#2E7D32"/>
+                <rect x="6" y="60" width="24" height="24" fill="#2E7D32"/>
+                <rect x="36" y="36" width="18" height="18" fill="#2E7D32"/>
+              </svg>
+            </div>
+            <div style="color:var(--muted)">Trace demo: AGT-001</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer><div class="container">© VL AgriTrade</div></footer>
+
+  <script>
+    function showTrace(){
+      const id = document.getElementById('traceInput').value || 'AGT-001';
+      const div = document.getElementById('traceResult');
+      // demo content
+      div.innerHTML = `
+        <div class="card">
+          <h4>Chi tiết Trace — ${id}</h4>
+          <p><strong>Sản phẩm:</strong> Cam sành</p>
+          <p><strong>Nông dân:</strong> Lâm Ngọc Giàu</p>
+          <p><strong>Ngày thu hoạch:</strong> 2025-11-05</p>
+          <p><strong>Ghi chú:</strong> Phân hữu cơ; xử lý bảo quản tiêu chuẩn.</p>
+          <div style="margin-top:8px"><a class="btn" href="#">Tải QR (PNG)</a></div>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- login.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đăng nhập — VL AgriTrade</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo-wrap"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="#fff"/></svg></div><div><div class="brand-title">VL AgriTrade</div></div></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="max-width:480px;margin:24px auto">
+      <div class="card">
+        <h3 style="margin-top:0">Đăng nhập</h3>
+        <form onsubmit="event.preventDefault(); alert('Đăng nhập (demo)');">
+          <label>Email hoặc số điện thoại</label><input required>
+          <label style="margin-top:8px">Mật khẩu</label><input type="password" required>
+          <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
+            <button class="btn">Đăng nhập</button>
+            <a class="btn secondary" href="register.html">Đăng ký</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer><div class="container">© VL AgriTrade</div></footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- priceboard.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VL AgriTrade — AgriLive PriceBoard</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo-wrap">
+        <div class="logo-mark"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="#fff"/></svg></div>
+        <div><div class="brand-title">VL AgriTrade</div></div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="priceboard.html">AgriLive</a>
+        <a href="marketplace.html">Mua/Bán</a>
+        <a href="finance.html">Hỗ trợ tài chính</a>
+        <a href="agritrace.html">AgriTrace</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary" href="register.html">Đăng ký</a>
+        <a class="btn" href="login.html">Đăng nhập</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">AgriLive PriceBoard™</h2>
+    <p style="color:var(--muted)">Bảng giá chi tiết — dữ liệu mẫu. Tích hợp API chợ đầu mối để cập nhật thực tế.</p>
+
+    <div class="card" style="overflow:auto;margin-top:12px">
+      <table class="table" id="priceTable">
+        <thead>
+          <tr><th>Sản phẩm</th><th>Giá sàn</th><th>Giá trung bình</th><th>Khối lượng (kg)</th><th>% 24h</th><th>Hành động</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bưởi da xanh</td><td class="price-up">28,000</td><td>30,500</td><td>1,200</td><td class="price-up">+3.5%</td><td><a class="btn" href="marketplace.html">Xem lô</a></td></tr>
+          <tr><td>Cam sành</td><td class="price-down">9,200</td><td>9,800</td><td>3,600</td><td class="price-down">-2.1%</td><td><a class="btn" href="marketplace.html">Xem lô</a></td></tr>
+          <tr><td>Gạo</td><td class="price-up">12,500</td><td>13,200</td><td>25,000</td><td class="price-up">+1.2%</td><td><a class="btn" href="marketplace.html">Xem lô</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© VL AgriTrade</div>
+  </footer>
+</body>
+</html>

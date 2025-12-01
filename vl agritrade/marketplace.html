@@ -1,0 +1,77 @@
+<!-- marketplace.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VL AgriTrade — Mua/Bán</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo-wrap"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="#fff"/></svg></div><div><div class="brand-title">VL AgriTrade</div></div></div>
+      <nav class="nav-links"><a href="index.html">Trang chủ</a><a href="priceboard.html">AgriLive</a><a href="marketplace.html">Mua/Bán</a><a href="finance.html">Hỗ trợ tài chính</a><a href="agritrace.html">AgriTrace</a></nav>
+      <div class="actions"><a class="btn secondary" href="register.html">Đăng ký</a><a class="btn" href="login.html">Đăng nhập</a></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Mua / Bán theo lô</h2>
+
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <div style="flex:1;min-width:320px">
+        <div class="card">
+          <h4 style="margin-top:0">Danh sách lô (demo)</h4>
+          <div style="display:grid;gap:12px">
+            <!-- sample cards -->
+            <div style="border:1px solid #eef6ef;padding:12px;border-radius:8px">
+              <strong>Cam sành — 2 tấn</strong>
+              <div style="color:var(--muted);font-size:13px">Nông dân: Lâm Ngọc Giàu • Giá đề xuất: 58,000 ₫/kg</div>
+              <div style="margin-top:8px"><a class="btn" href="#">Chi tiết & Đặt cọc</a></div>
+            </div>
+
+            <div style="border:1px solid #eef6ef;padding:12px;border-radius:8px">
+              <strong>Bưởi da xanh — 1.5 tấn</strong>
+              <div style="color:var(--muted);font-size:13px">HTX Bưởi VQ • Giá đề xuất: 72,000 ₫/kg</div>
+              <div style="margin-top:8px"><a class="btn" href="#">Chi tiết & Đặt cọc</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin-top:0">Đăng lô hàng</h4>
+          <form onsubmit="event.preventDefault(); alert('Đăng lô (demo)');">
+            <label>Loại nông sản</label><input required placeholder="Ví dụ: Cam sành">
+            <div class="form-row" style="margin-top:8px">
+              <div class="col"><label>Số lượng (tấn)</label><input required placeholder="2"></div>
+              <div class="col"><label>Giá đề xuất (₫/kg)</label><input required placeholder="58,000"></div>
+            </div>
+            <label style="margin-top:8px">Ngày thu hoạch</label><input type="date">
+            <div style="margin-top:10px"><button class="btn">Đăng lô (demo)</button></div>
+          </form>
+        </div>
+      </div>
+
+      <aside style="width:320px">
+        <div class="card">
+          <h4 style="margin-top:0">Bộ lọc</h4>
+          <label>Loại</label><select><option>Tất cả</option><option>Cam sành</option><option>Bưởi</option></select>
+          <label style="margin-top:8px">Vùng</label><input placeholder="Tỉnh/Quận">
+          <div style="margin-top:10px"><a class="btn" href="#">Áp dụng</a></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin-top:0">AgriTrace (ví dụ)</h4>
+          <p style="color:var(--muted);margin:0">Scan QR để xem thông tin lô (demo)</p>
+          <div style="margin-top:10px"><a class="btn secondary" href="agritrace.html">Xem AgriTrace</a></div>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer><div class="container">© VL AgriTrade</div></footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- MẪU A: Logo chữ + lá (copy vào header) -->
+<style>
+  .vl-logo {
+    display:flex;
+    gap:10px;
+    align-items:center;
+    font-family:Inter, system-ui, sans-serif;
+    cursor:default;
+  }
+  .vl-mark {
+    width:52px;
+    height:52px;
+    border-radius:10px;
+    background:linear-gradient(180deg,#1f8b4a,#0b6b3a);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-weight:800;
+    box-shadow:0 6px 14px rgba(11,107,58,0.18);
+  }
+  .vl-text { color:#063f20; line-height:1; }
+  .vl-text .title { font-weight:800; font-size:15px; }
+  .vl-text .sub { font-size:11px; color:#2f6d45; opacity:0.9; margin-top:2px; }
+</style>
+
+<div class="vl-logo" aria-label="VL AgriTrade logo">
+  <div class="vl-mark" role="img" aria-hidden="true">
+    <!-- small leaf SVG inside the square -->
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="white" opacity="0.95"/>
+    </svg>
+  </div>
+  <div class="vl-text">
+    <div class="title">VL AgriTrade</div>
+    <div class="sub">Giao dịch nông sản • Truy xuất QR</div>
+  </div>
+</div>
+

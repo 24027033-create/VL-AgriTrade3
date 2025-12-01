@@ -1,0 +1,71 @@
+/* assets/styles.css - Shared styles for all pages */
+:root{
+  --primary:#2E7D32;
+  --accent:#FFB300;
+  --dark:#263238;
+  --muted:#6B7280;
+  --bg:#F7F9F8;
+  --card:#ffffff;
+  --shadow: 0 6px 20px rgba(10,20,10,0.06);
+  --radius:10px;
+  font-family: "Inter", "Roboto", "Noto Sans", Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--dark);line-height:1.45}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+
+/* Header */
+header{background:var(--card);border-bottom:1px solid #E6EEF1;position:sticky;top:0;z-index:60}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1100px;margin:0 auto}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--primary);box-shadow:var(--shadow)}
+.logo-mark svg{width:26px;height:26px}
+.brand-title{font-weight:800;color:var(--primary);font-size:18px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:var(--dark);text-decoration:none;font-weight:600;font-size:14px;padding:8px;border-radius:8px}
+.nav-links a:hover{background:#f2fff4}
+.actions{display:flex;gap:10px;align-items:center}
+
+/* Buttons */
+.btn{background:var(--primary);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
+.btn.secondary{background:transparent;border:1px solid var(--primary);color:var(--primary)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 380px;gap:22px;align-items:center;padding:28px 0}
+.hero h1{font-size:28px;margin:0 0 10px}
+.hero p{color:var(--muted);margin:0 0 16px}
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* Layout */
+.grid-2{display:grid;grid-template-columns:1fr 360px;gap:22px}
+.section-title{font-size:18px;margin:0 0 12px}
+
+/* Table */
+.table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden}
+.table thead th{background:#f0fbf6;padding:12px 14px;text-align:left;color:var(--primary);font-weight:700}
+.table tbody td{padding:12px 14px;border-top:1px solid #f2f6f5;font-size:14px}
+.price-up{color:var(--primary);font-weight:800}
+.price-down{color:#D32F2F;font-weight:800}
+
+/* Forms */
+.form-row{display:flex;gap:12px}
+.form-row .col{flex:1}
+label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+input,select,textarea{width:100%;padding:10px;border:1px solid #e6ece6;border-radius:8px;font-size:14px}
+
+/* Footer */
+footer{padding:24px;text-align:center;color:var(--muted);font-size:13px}
+
+/* Responsive */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;gap:16px}
+  .grid-2{grid-template-columns:1fr;gap:16px}
+  .nav-links{display:none}
+}
+@media (max-width:600px){
+  .brand-title{font-size:16px}
+  .hero h1{font-size:22px}
+}
+

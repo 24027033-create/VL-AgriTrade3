@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VL AgriTrade — Trang chủ</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo-wrap">
+        <div class="logo-mark" aria-hidden="true">
+          <!-- inline simplified SVG (keeps contrast) -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 21s7-4 11-8 6-10 6-10-8 2-12 6S3 21 3 21z" fill="#fff" opacity="0.95"/></svg>
+        </div>
+        <div>
+          <div class="brand-title">VL AgriTrade</div>
+          <div style="font-size:12px;color:var(--muted)">Giao dịch nông sản • Truy xuất QR • Hỗ trợ tài chính</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="priceboard.html">AgriLive</a>
+        <a href="marketplace.html">Mua/Bán</a>
+        <a href="finance.html">Hỗ trợ tài chính</a>
+        <a href="agritrace.html">AgriTrace</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn secondary" href="register.html">Đăng ký</a>
+        <a class="btn" href="login.html">Đăng nhập</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>VL AgriTrade — Sàn giao dịch nông sản minh bạch</h1>
+        <p>Gắn kết nông dân, thương lái và doanh nghiệp. Tra cứu giá, đăng lô, tạo QR truy xuất và yêu cầu tạm ứng — tất cả trên một nền tảng.</p>
+        <div style="display:flex;gap:12px">
+          <a class="btn" href="marketplace.html">Đăng lô ngay</a>
+          <a class="btn secondary" href="priceboard.html">Xem AgriLive</a>
+        </div>
+
+        <div style="margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+          <div class="card">
+            <strong>Đăng lô</strong>
+            <p style="margin:8px 0 0;color:var(--muted)">Tạo lô hàng, đính kèm QR và bắt đầu giao dịch.</p>
+          </div>
+          <div class="card">
+            <strong>Theo dõi giá</strong>
+            <p style="margin:8px 0 0;color:var(--muted)">AgriLive giúp bạn nắm biến động thị trường.</p>
+          </div>
+          <div class="card">
+            <strong>Tạm ứng mùa vụ</strong>
+            <p style="margin:8px 0 0;color:var(--muted)">Yêu cầu tạm ứng dựa trên giá trị lô & hồ sơ.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 class="section-title">AgriLive PriceBoard™</h3>
+          <p style="margin:0 0 10px;color:var(--muted)">Giá mẫu (demo) — cập nhật theo thời gian thực khi kết nối API.</p>
+          <div style="overflow:auto">
+            <table class="table" aria-hidden="true">
+              <thead><tr><th>Sản phẩm</th><th>Giá (VNĐ/kg)</th></tr></thead>
+              <tbody>
+                <tr><td>Bưởi da xanh</td><td class="price-up">30,500</td></tr>
+                <tr><td>Cam sành</td><td class="price-down">9,800</td></tr>
+                <tr><td>Gạo</td><td class="price-up">13,200</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h3 class="section-title">Tại sao chọn VL AgriTrade?</h3>
+        <ul style="margin:8px 0 0 18px;color:var(--muted)">
+          <li>Minh bạch & truy xuất nguồn gốc bằng QR</li>
+          <li>Kết nối trực tiếp nông dân và người mua</li>
+          <li>Hỗ trợ tài chính dựa trên giá trị lô</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <strong>VL AgriTrade</strong> — Demo frontend • Không phải bản chính thức
+    </div>
+  </footer>
+</body>
+</html>
